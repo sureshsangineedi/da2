@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone & Install') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
         stage('Docker Build') {
             steps {
                 sh 'docker build -t day2-node-app .'
